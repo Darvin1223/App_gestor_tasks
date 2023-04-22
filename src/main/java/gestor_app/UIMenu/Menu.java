@@ -17,12 +17,13 @@ public class Menu {
                     TaskServices.addDataTask();
                     break;
                 case 2:
-                    System.out.println("Usuario registrado");
+                    TaskServices.showAllTaks();
                     break;
                 default:
                     break;
             }
         }while (option != 0);
     }
+
 
 }

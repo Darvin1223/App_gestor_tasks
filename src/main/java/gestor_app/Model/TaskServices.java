@@ -21,4 +21,8 @@ public class TaskServices {
         task.setStatus(status);
         TaskCrud.addNewTask(task);
     }
+
+    public static void showAllTaks(){
+        TaskCrud.showAllTask();
+    }
 }
