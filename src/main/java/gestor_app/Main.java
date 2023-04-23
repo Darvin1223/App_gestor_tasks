@@ -9,7 +9,7 @@ public class Main {
         System.out.println("\n");
         System.out.println("This is a TO-DO app");
         System.out.println("Select an option \n");
-        User user = new User("Darvin Rodriguez", "darvin.rod10@gmail.com","Adriana");
+//        User user = new User("Darvin Rodriguez", "darvin.rod10@gmail.com","Adriana");
         Menu.showMenu();
     }
 }
