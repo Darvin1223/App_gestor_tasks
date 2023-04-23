@@ -11,7 +11,7 @@ public class Menu {
         Scanner sc = new Scanner(System.in);
         int option;
         do {
-            System.out.println("1. Add Task \n" + "2. Show all \n" + "3. Update taks \n" + "4. Delete taks \n" + "5. Select a task \n" + "0. Exit \n");
+            System.out.println("1. Add Task \n" + "2. Show all \n" + "3. Update taks \n" + "4. Delete taks \n" + "5. Select a task \n" + "6. Delete all task \n" + "0. Exit \n");
             option = sc.nextInt();
             switch (option){
                 case 1:
@@ -28,6 +28,9 @@ public class Menu {
                     break;
                 case 5:
                     TaskServices.showADataTask();
+                    break;
+                case 6:
+                    TaskServices.deleteAllDataTask();
                     break;
                 default:
                     break;
@@ -61,8 +64,7 @@ public class Menu {
                 case 5:
                     showMenu();
                     break;
-                default:
-                    throw new IllegalStateException("Unexpected value: " + option);
+
             }
 
         }while (option != 0);
